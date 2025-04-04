@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+        .bbody{
+            display: flex;
+            flex-direction: column;
+        }
+        .cover{
+            position: absolute;
+            top:0vh;
+            background: rgb(0,0,0,0.8);
+        }
+        .container
+        {
+            position: absolute;
+            top:0vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background:black;
+            background-position: center;
+            background-size: cover;
+            color:white;
+        }
+        .container .heading
+        {
+            font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+            font-size: 100px;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            
+            
+            color:white;
+            
+        }
+        .line{
+            width: 100%;
+            border: 1px solid white;
+            color:white;
+            position: relative;
+            top:-10vh;
+        }
+
+        .review{
+            display: flex;
+            gap:10px;
+            
+            height: 40vh;
+            padding: 10px;
+            color:white;
+
+        }
+        .review:hover{
+            background: rgb(256,256,256,0.4);
+            transition-duration: 0.5s;
+        }
+        .review .pic{
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+            width: 60vw;
+            clip-path: circle(45% at 50% 50%);        
+        }
+        .review .pic img{
+            height: 100%;
+            width: 100%;
+        }
+        .review .comment{
+            
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        .review .comment .name{
+            display: flex;
+            align-items: center;
+            
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 35px;
+        }
+        .review .comment .review2{
+            display: flex;
+            align-items: center;
+            
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bbody">
+        <div class="cover">
+
+        </div>
+        <div class="container">
+            <div class="heading">
+                Experiences
+            </div>
+            <div class="line"></div>
+            
+            
+            <div class="review">
+                <div class="pic">
+                    <img src="https://www.koimoi.com/wp-content/new-galleries/2023/10/shah-rukh-khan-once-destroyed-a-journalist-who-rudely-asked-him-to-be-serious-during-a-press-meet-saying-ask-me-more-i-will-answer-you-when-he-ran-out-of-questions-01.jpg">
+                </div>
+                <div class="comment">
+                    <div class="name">
+                        Shah Rukh Khan
+                    </div>
+                    <div class="review2">
+                        Kerala is truly ‘God’s Own Country,’ and this website beautifully captures its essence. From serene backwaters to lush green hills and vibrant culture, every aspect is showcased with stunning visuals and rich details. It’s an absolute delight for anyone planning a trip or just wanting to experience the magic of Kerala virtually. Brilliantly done! 
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        
+            <div class="review">
+                
+                <div class="comment">
+                    <div class="name">Tom Cruise</div>
+                    <div class="review2">
+                        I have traveled across the world, but Kerala's beauty is something truly special. The peaceful backwaters and warm hospitality make it an unforgettable experience. Great work on this website!
+                    </div>
+                </div>
+                <div class="pic" style="clip-path: circle(40% at 50% 50%);">
+                    <img src="https://variety.com/wp-content/uploads/2023/07/GettyImages-1511418315.jpg?w=1024">
+                </div>
+            </div>
+        
+            <div class="review">
+                <div class="pic" style="clip-path: circle(35% at 50% 50%);">
+                    <img src="https://imageio.forbes.com/blogs-images/natalierobehmed/files/2017/08/Emma-Watson-1200x818.jpg?format=jpg&height=900&width=1600&fit=bounds">
+                </div>
+                <div class="comment">
+                    <div class="name">Emma Watson</div>
+                    <div class="review2">
+                        Kerala’s rich culture and natural beauty are mesmerizing. This website does an amazing job of bringing it to life. A must-visit destination for anyone who loves nature and heritage!
+                    </div>
+                </div>
+            </div>
+        
+            <div class="review">
+                
+                <div class="comment">
+                    <div class="name">Leonardo DiCaprio</div>
+                    <div class="review2">
+                        I have always been passionate about nature and sustainability. Kerala is a gem, and this website does justice to its beauty and eco-friendly tourism. Fantastic effort!
+                    </div>
+                </div>
+                <div class="pic" style="clip-path: circle(35% at 50% 50%);">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4EAj6f5u81q5OpWLgx6NgtUJut6Gn38TwA&s">
+                </div>
+            </div>
+        
+            <div class="review">
+                <div class="pic" style="clip-path: circle(35% at 50% 50%);">
+                    <img src="https://cdn.prod.website-files.com/659f40382d7577753a0c8007/660e22838a39fac16951f1b3_45-facts-about-robert-downey-jr.jpg">
+                </div>
+                <div class="comment">
+                    <div class="name">Robert Downey Jr.</div>
+                    <div class="review2">
+                        Kerala is like a perfect movie scene – stunning visuals, amazing atmosphere, and a peaceful vibe. This website perfectly captures that charm. Well done!
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+
+</body>
+</html>

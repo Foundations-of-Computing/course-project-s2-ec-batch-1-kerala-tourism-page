@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Spot Finder</title>
+    <script src="https://kit.fontawesome.com/0e66e07bd2.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Rocker&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Indie+Flower&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap');
+
+        body {
+            font-family: "Smooch Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            text-align: center;
+            background: url(https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg);
+            background-size: 100%;
+            background-position: 0% 20%;
+            
+            
+        }
+        .container{
+            
+            height: 100vh;
+            width: 98vw;
+        }
+        .cover{
+            
+            background-color: rgba(0, 0, 0, 0.586);
+            position: absolute;
+            height: 100vh;
+            width: 98vw;
+            transform: scale(1.4);
+            z-index: -1;
+
+        }
+        .contentx .heading{
+            font-family: "Smooch Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 10rem;
+            color: azure;
+            border-bottom: 1px solid white;
+        }
+        .search{
+            margin-top: 2rem;
+            height: 4vh;
+            width:30vw;
+            border-radius: 20px;
+            padding: 1vh;
+            border: 1px solid white;
+            margin-right: -65px;
+            font-family: "Noto Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+            font-size: 15px;
+        }
+        .contentx button{
+            background-color: transparent;
+            border: none;
+            height:50px;
+            width: 50px;
+            opacity: 0.5;
+            
+
+        }
+        .contentx button:hover{
+            opacity: 1;
+        }
+        .fa-magnifying-glass{
+            transform: scale(1.3);
+            
+        }
+        body .container .contentx .details{
+            width: 30vw;
+            background-color: white;
+            text-align: left;
+            display: flow-root;
+            
+            position: relative;
+            left:23.5vw;
+            top: 5vh;
+
+            
+            transition-duration: 1s;
+        }
+        body .container .contentx .details h2{
+            margin-left: 10px;
+            font-family: "Smooch Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            font-size:35px;
+            
+            
+        }
+
+        body .container .contentx .details p{
+            font-family: "Nunito Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100,
+                "YTLC" 500;
+            font-size:25px;
+            margin-left: 10px;
+            
+
+        }
+        #result {
+            
+            width: 50vw;
+            background-color: white;
+
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            /* object-fit: cover; */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            float: left;
+            
+        }
+        .contentx .finish{
+            font-family: "Smooch Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-size:25px;
+            text-align: center;
+            color:white;
+            position: relative;
+            top:8vh;
+            cursor: pointer;
+
+        }
+        .contentx .finish a{
+            color: white;
+            text-decoration: none;
+            transition-duration: 1s;
+            
+            
+        }
+        .contentx .finish a:hover{
+            color:white;
+            text-decoration: underline;
+            
+
+        }
+        .contentx .finish a:active,.contentx .finish a:visited{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cover"></div>
+        <div class="contentx">
+            <div class="heading">Find your Spots</div>
+            <input class="search" type="text" id="spotInput" placeholder="Enter a tourist spot">
+            <button onclick="findSpot()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            
+            <div class="details" id="result">
+                
+            </div>
+            <div class="finish"><a href="keralatourism.html">Back</a> | <a href="keralatourism.html">Home</a> | <a href="#">About Us</a></div>
+            
+                <script>
+                    const touristSpots = {
+                        "Munnar": { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQueBHlC4zBwLxz3Di_92Er493f08lDeo9jLw&s", district: "District : Idukki <br>Escape to Munnar, a serene hill station nestled in the heart of Kerala, where lush tea gardens, misty hills, and cool mountain air await. Explore breathtaking landscapes, vibrant wildlife, and the charm of colonial-era bungalows while hiking through tranquil trails or enjoying a peaceful boat ride. Whether you're seeking adventure, relaxation, or simply a break from the ordinary, Munnar offers an unforgettable retreat for every traveler." },
+                        
+                        
+                        "Alappuzha Beach": {  
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Alleppey_beach.jpg/1200px-Alleppey_beach.jpg",  
+  "district": "District : Alappuzha <br>Unwind at Alappuzha Beach, a mesmerizing coastal retreat in Kerala, where golden sands meet the gentle waves of the Arabian Sea. Stroll along the historic pier, witness breathtaking sunsets, or take a serene houseboat cruise through the enchanting backwaters. With its blend of natural beauty, rich maritime history, and vibrant local culture, Alappuzha Beach offers the perfect escape for beach lovers, adventure seekers, and those craving a peaceful getaway."  
+},  
+"Jadayu Para": {  
+  "image": "https://www.thenmalaecotourism.org/wp-content/uploads/2018/08/Jadayu-para-870x454.jpg",  
+  "district": "District : Kollam <br>Step into mythology and adventure at Jatayu Para, home to the world's largest bird sculpture, set amidst the scenic landscapes of Kerala. This iconic destination blends history, art, and eco-tourism, offering thrilling activities like rock climbing, zip-lining, and trekking. With breathtaking panoramic views and a deep connection to the Ramayana legend, Jatayu Para is a must-visit for travelers seeking both excitement and cultural enrichment."  
+},  
+"Bekal Fort": {  
+  "image": "bekal.avif",  
+  "district": "Discover the grandeur of Bekal Fort, Kerala’s largest and most well-preserved coastal fortress, standing majestically along the Arabian Sea. With its massive walls, secret tunnels, and breathtaking sea-facing views, this historic site offers a perfect blend of heritage, mystery, and natural beauty. Whether you're exploring its ancient ramparts, enjoying the serene beach below, or capturing stunning sunset vistas, Bekal Fort promises an unforgettable journey through time."  
+},  
+"Vizhinjam Lighthouse": {  
+  "image": "Lighthouse.jpg",  
+  "district": "Soak in the panoramic coastal views from Vizhinjam Lighthouse, a towering sentinel overlooking the Arabian Sea near Kovalam. With its striking red-and-white stripes and a history dating back to the colonial era, this iconic landmark offers a breathtaking vantage point for mesmerizing sunsets and endless ocean horizons. Whether you're a history buff, a photography enthusiast, or simply seeking a tranquil escape, Vizhinjam Lighthouse promises an unforgettable experience."  
+},  
+"Kuruvadweep": {  
+  "image": "kuruva.webp",  
+  "district": "Escape into the untouched beauty of Kuruvadweep, a lush river island sanctuary nestled in the heart of the Kabini River in Wayanad. This serene eco-tourism spot is home to rare flora, exotic bird species, and tranquil bamboo groves, making it a paradise for nature lovers and adventure seekers alike. Whether you're crossing the river on a traditional raft, exploring dense forests, or simply soaking in the peaceful ambiance, Kuruvadweep offers a refreshing retreat into the wild."  
+},  
+"Mullaperiyar Dam": {  
+  "image": "mullaperiyar_dam.avif",  
+  "district": "Experience the engineering marvel of Mullaperiyar Dam, an iconic structure built across the Periyar River, nestled amidst the lush greenery of Kerala’s Western Ghats. Surrounded by scenic landscapes and rich wildlife, this historic dam not only supports irrigation and hydroelectric projects but also offers a tranquil escape for nature enthusiasts. Whether you're admiring its architectural brilliance, spotting wildlife in the nearby Periyar Tiger Reserve, or enjoying a peaceful boat ride, Mullaperiyar Dam promises a perfect blend of history, nature, and adventure."  
+},  
+"Paragon": {  
+  "image": "paragon1food.jpg",  
+  "district": "Indulge in a legendary culinary experience at Paragon, Kozhikode, a celebrated name in Kerala’s food scene. Nestled in the heart of Kozhikode district, this iconic restaurant is famed for its mouthwatering Malabar cuisine, serving everything from aromatic biryanis to flavorful seafood delicacies. Whether you're savoring their signature chicken biryani, tasting the rich blend of spices in their curries, or enjoying the warm hospitality, Paragon offers an unforgettable gastronomic journey that keeps food lovers coming back for more."  
+},  
+"Rahmat": {  
+  "image": "beefbiriyani.jpg",  
+  "district": "Treat yourself to the irresistible flavors of Rahmath, a legendary eatery in Kozhikode district, famous for serving one of the best beef biryanis in Kerala. This iconic food spot is a haven for meat lovers, offering perfectly spiced, tender beef layered with fragrant rice, along with other delectable Malabar dishes. Whether you're a biryani enthusiast or simply looking to experience authentic Kozhikode flavors, Rahmath promises a meal that will leave you craving for more."  
+},  
+"Nahdi": {  
+  "image": "nahdimandi.jpg",  
+  "district": "Savor the rich flavors of Arabian cuisine at Nahdi Mandi, a popular food destination in Kozhikode district known for its authentic Yemeni-style mandi. With perfectly cooked, aromatic rice paired with tender, slow-cooked meat, this restaurant offers a true taste of the Middle East. Whether you're enjoying a traditional lamb mandi, a flavorful chicken mandi, or exploring other Arabic delights, Nahdi Mandi provides a feast that’s perfect for food lovers seeking a unique culinary experience."  
+},  
+
+
+
+
+
+
+
+
+                    };
+
+                    function findSpot() {
+                        let input = document.getElementById("spotInput").value;
+                        let resultDiv = document.getElementById("result");
+                        
+                        if (touristSpots[input]) {
+                            let spot = touristSpots[input];
+                            resultDiv.innerHTML = `<img src="${spot.image}" alt="${input}"><h2>${input}</h2><hr><p> ${spot.district}</p>`;
+                        } else {
+                            resultDiv.innerHTML = "<p>Tourist spot not found.</p>";
+                        }
+                    }
+                </script>
+                
+        </div>    
+    </div>
+</body>
+</html>
